@@ -9,13 +9,21 @@
 
   <p>
     <input type="text" id="msg">
-    <input type="button" value="変換">
+    <input type="button" id="button" value="変換">
   </p>
   <div id="barCode"></div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
      // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+     $(function(){
+       $('#button').click(function(){
+         let msg = encodeURIComponent($('#msg').val());
+         console.log(msg);
+         var img = $('<img>').attr('src', 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&charset-sourc=UTF-8&data='+msg);
+         $('#barCode').html(img);
+       });
+     });
   </script>
 </body>
 </html>
