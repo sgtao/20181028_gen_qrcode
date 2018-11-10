@@ -1,7 +1,11 @@
 # 20181028_gen_qrcode
 
-generate QR code graphics using api.qrserver.com.
+generate QR code graphics using api of qoqr.me.
 
+## sample page
+- [generate QR code](https://sgtao.github.io/20181028_gen_qrcode/)
+
+## memo
 - refer to dotinstall's lesson [二次元バーコードジェネレーター](https://dotinstall.com/lessons/barcode_jquery_v2)
 
 - using API create-qr-code of [QR code API](http://goqr.me/api/doc)
