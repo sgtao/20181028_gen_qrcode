@@ -6,6 +6,7 @@
 </head>
 <body>
   <h1>Generate QR by API</h1>
+  <h3><a href="README.md" target='_blank'>MEMO</a></h3>
 
   <p>
     <input type="text" id="msg">
@@ -16,11 +17,14 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
      // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+	 var url =  'https://api.qrserver.com/v1/create-qr-code/?';
+	 var charset = 'charset-source=UTF-8';
+	 var size = '&size=150x150';
      $(function(){
        $('#button').click(function(){
          let msg = encodeURIComponent($('#msg').val());
          console.log(msg);
-         var img = $('<img>').attr('src', 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&charset-sourc=UTF-8&data='+msg);
+         var img = $('<img>').attr('src', url + charset + size + '&data='+msg);
          $('#barCode').html(img);
        });
      });
