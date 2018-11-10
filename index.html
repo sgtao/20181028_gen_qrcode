@@ -6,17 +6,18 @@
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-  <h1>Generate QR by QR code API</h1>
-  <h3><a href="README.md" target='_blank'>MEMO</a></h3>
-
-  <div>
-    <form name="F1" action="#">
-      <textarea id="qrdata" rows="10" cols="40" name="qrdata"></textarea>
-    </form>
+  <div class="container">
+    <h1>Generate QR by QR code API</h1>
+    <h3><a href="README.md" target='_blank'>MEMO</a></h3>
+    <div id="textarea">
+      <form name="F1" action="#">
+        <textarea id="qrdata" rows="10" cols="40" name="qrdata"></textarea>
+      </form>
+    </div>
+    <div id="conv_btn">Convert to QR code</div>
+    <div id="msg"></div>
+    <div id="barCode"></div>
   </div>
-  <div id="conv_btn">Convert to QR code</div>
-  <div id="barCode"></div>
-
   <script src="script/gen_qrcode.js"></script>
 </body>
 </html>

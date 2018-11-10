@@ -1,15 +1,23 @@
+.container {
+  font-family: 'Courier New', sans-serif;
+  width: 300px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-weight: bold;
+}
+
 #conv_btn {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 12pt;
   background: #eee;
-  width: 180px;
+  width: 200px;
   height: 40px;
   line-height: 40px;
   box-shadow: 0 6px 0 #ccc ;
   margin-bottom: 30px;
 }
 
-#conv_btn:hover {
+conv_btn:hover {
   opacity: 0.3;
 }
 #conv_btn.pushed {
