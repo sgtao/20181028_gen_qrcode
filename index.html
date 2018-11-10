@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Generate QR by API</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <h1>Generate QR by API</h1>
   <h3><a href="README.md" target='_blank'>MEMO</a></h3>
 
-  <p>
-    <input type="text" id="qrdata">
-    <input type="button" id="button" value="変換">
-  </p>
+  <div>
+	<form name="F1" action="#">
+    <textarea id="qrdata" rows="10" cols="40" name="qrdata"></textarea>
+	</form>
+  </div>
+  <div>
+    <input type="button" id="convert" value="変換">
+  </div>
   <div id="barCode"></div>
 
   <script src="script/gen_qrcode.js"></script>
