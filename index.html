@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Generate QR by API</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-  <h1>Generate QR by API</h1>
+  <h1>Generate QR by QR code API</h1>
   <h3><a href="README.md" target='_blank'>MEMO</a></h3>
 
   <div>
-	<form name="F1" action="#">
-    <textarea id="qrdata" rows="10" cols="40" name="qrdata"></textarea>
-	</form>
+    <form name="F1" action="#">
+      <textarea id="qrdata" rows="10" cols="40" name="qrdata"></textarea>
+    </form>
   </div>
-  <div>
-    <input type="button" id="convert" value="変換">
-  </div>
+  <div id="conv_btn">Convert to QR code</div>
   <div id="barCode"></div>
 
   <script src="script/gen_qrcode.js"></script>
